@@ -35,5 +35,5 @@ public class Snake_and_Ladder {
 				System.out.println("Now the position for player 1 is: " + position);
 						break;
 		}
-	}System.out.println("The player has one the game");
+	}System.out.println("The player has won the game");
 			}}
