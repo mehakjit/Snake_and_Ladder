@@ -7,6 +7,7 @@ public class Snake_and_Ladder {
 		int No_of_Players = 1;
 		int position = 0;
 		int die_roll = 0;
+		int Total_die_rolls = 0;
 		for (int i = 1;i < No_of_Players + 1;i++ )
 			System.out.println("The position of Player " + i + " is " + position );
 			while(position <= 100) {
@@ -14,6 +15,7 @@ public class Snake_and_Ladder {
 					break;
 				else {
 						die_roll = (int)(Math.random()*6+1);
+						Total_die_rolls += 1;
 						System.out.println("The die rolls for player 1 is " + die_roll);
 						int Option = (int)(Math.random()*3+1);
 						switch(Option) {
@@ -44,6 +46,6 @@ public class Snake_and_Ladder {
 									break;
 						}
 					}
-				}System.out.println("The player has won the game");
+				}System.out.println("The player has won the game with total die rolls = " + Total_die_rolls);
 		}
 	}
